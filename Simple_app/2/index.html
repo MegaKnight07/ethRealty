@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EthRealty - Buy & Sell Properties</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-blue-900 text-white p-4 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center text-lg font-semibold">
+        <img src="images/logo.png" alt="EthRealty Logo" class="w-10 h-10 mr-2">
+        EthRealty
+      </a>
+      <ul class="flex space-x-8">
+        <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+        <li><a href="#list-property" class="hover:text-yellow-400 transition">List Property</a></li>
+        <li><a href="#about" class="hover:text-yellow-400 transition">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-gray-50">
+    <h1 class="text-4xl font-bold text-blue-900 mb-4">Welcome to EthRealty</h1>
+    <p class="text-gray-700 text-lg mb-8">Buy, Sell, or List Your Property Securely Using Blockchain Technology.</p>
+    <button onclick="window.location.href='#listings'" class="px-6 py-3 bg-blue-900 text-white font-semibold rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition duration-300">View Properties</button>
+  </section>
+
+  <!-- Property Listings -->
+  <section id="listings" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Featured Properties</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Property Card -->
+        <div class="property-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition" onclick="window.location.href='property.html'">
+          <div class="image-placeholder bg-gray-200 w-full h-48 mb-4 rounded-md"></div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Luxury Apartment</h3>
+          <p class="text-gray-600">3 Beds | 2 Baths | 1,200 sqft</p>
+          <p class="text-lg font-bold text-blue-900 mt-3">Price: 2.5 ETH</p>
+        </div>
+
+        <!-- Additional Property Card -->
+        <div class="property-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition" onclick="window.location.href='property.html'">
+          <div class="image-placeholder bg-gray-200 w-full h-48 mb-4 rounded-md"></div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Cozy Suburban Home</h3>
+          <p class="text-gray-600">4 Beds | 3 Baths | 2,000 sqft</p>
+          <p class="text-lg font-bold text-blue-900 mt-3">Price: 3.0 ETH</p>
+        </div>
+        <!-- Additional Property Card -->
+        <div class="property-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xxl transition" onclick="window.location.href='property.html'">
+          <div class="image-placeholder bg-gray-200 w-full h-48 mb-4 rounded-md"></div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Cozy Suburban Home</h3>
+          <p class="text-gray-600">4 Beds | 3 Baths | 2,000 sqft</p>
+          <p class="text-lg font-bold text-blue-900 mt-3">Price: 3.0 ETH</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -13,6 +13,7 @@
   --clr-blue: #6C63FF;
   --clr-blue-2: #4c46b6;
   --clr-green: #4fb646;
+  --clr-badami:#ff8763;
 }
 
 body {
@@ -29,13 +30,13 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  /* background-color: #6C63FF; */
 }
 
 .nav__brand {
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 20px;
 }
 
@@ -45,7 +46,7 @@ nav {
 }
 
 .nav__brand h1 {
-  color: var(--clr-blue);
+  color: var(--clr-badami);
   font-size: 2.5em;
   font-weight: 800;
 }
@@ -76,7 +77,7 @@ nav {
   height: 50px;
   margin: 0 auto;
 
-  background-color: var(--clr-blue);
+  background-color: var(--clr-badami);
   color: var(--clr-white);
 
   border: none;

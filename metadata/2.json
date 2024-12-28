@@ -1,33 +1,33 @@
 {
-    "name": "Architectural CA Modern Home",
-    "address": "70780 Tamarisk Ln, Rancho Mirage, CA 92270",
-    "description": "Beautiful modern home in Rancho Mirage",
-    "image": "https://ipfs.io/ipfs/QmQUozrHLAusXDxrvsESJ3PYB3rUeUuBAvVWw6nop2uu7c/2.png",
-    "id": "2",
+    "name": "Luxury NYC Penthouse",
+    "address": "196 Trinity St, 33rd street w, saskatoon",
+    "description": "Luxury Penthouse located in the heart of NYC",
+    "image": "https://ipfs.io/ipfs/QmUjc6gDzLiSFHKpM8crDXQRuJxNsZAvEdK6D1d9yc4vb2/1.png",
+    "id": "1",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 15
+            "value": 2
         },
         {
             "trait_type": "Type of Residence",
-            "value": "Single family residence"
+            "value": "Condo"
         },
         {
             "trait_type": "Bed Rooms",
-            "value": 4
+            "value": 2
         },
         {
             "trait_type": "Bathrooms",
-            "value": 4
+            "value": 3
         },
         {
             "trait_type": "Square Feet",
-            "value": 3979
+            "value": 2200
         },
         {
             "trait_type": "Year Built",
-            "value": 1980
+            "value": 2013
         }
     ]
 }

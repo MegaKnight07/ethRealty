@@ -1,13 +1,13 @@
 {
     "name": "WA Nature Home",
-    "address": "183 Woodland Drive, Camano Island, WA 98282",
+    "address": "White House, Mota Varachha, Surat, Gujarat 394101, India",
     "description": "Comfy island home on Camano Island",
-    "image": "https://ipfs.io/ipfs/QmQUozrHLAusXDxrvsESJ3PYB3rUeUuBAvVWw6nop2uu7c/3.png",
+    "image": "https://ipfs.io/ipfs/QmUjc6gDzLiSFHKpM8crDXQRuJxNsZAvEdK6D1d9yc4vb2/3.png",
     "id": "3",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 10
+            "value": 1
         },
         {
             "trait_type": "Type of Residence",

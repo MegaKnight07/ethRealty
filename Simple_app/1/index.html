@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EthRealty - Buy & Sell Properties</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="EthRealty Logo">
+        EthRealty
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#list-property">List Property</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to EthRealty</h1>
+    <p>Buy, Sell, or List Your Property Securely Using Blockchain Technology.</p>
+    <button onclick="window.location.href='#listings'">View Properties</button>
+  </section>
+
+  <!-- Property Listings -->
+  <section id="listings" class="listings">
+    <h2>Featured Properties</h2>
+    <div class="property-cards">
+      <div class="property-card" onclick="window.location.href='property.html'">
+        <div class="image-placeholder"></div>
+        <h3>Luxury Apartment</h3>
+        <p>3 Beds | 2 Baths | 1,200 sqft</p>
+        <p><strong>Price:</strong> 2.5 ETH</p>
+      </div>
+      <div class="property-card" onclick="window.location.href='property.html'">
+        <div class="image-placeholder"></div>
+        <h3>Cozy Suburban Home</h3>
+        <p>4 Beds | 3 Baths | 2,000 sqft</p>
+        <p><strong>Price:</strong> 3.0 ETH</p>
+      </div>
+      <div class="property-card" onclick="window.location.href='property.html'">
+        <div class="image-placeholder"></div>
+        <h3>Cozy Suburban Home</h3>
+        <p>4 Beds | 3 Baths | 2,000 sqft</p>
+        <p><strong>Price:</strong> 3.0 ETH</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

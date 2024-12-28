@@ -1,13 +1,13 @@
 {
-    "name": "Swastik Bunglow",
-    "address": "96 Swastik Park Society, Katargam, surat-395004",
-    "description": "Luxury Bunglow located in the heart of Surat",
-    "image": "https://ipfs.io/ipfs/QmUjc6gDzLiSFHKpM8crDXQRuJxNsZAvEdK6D1d9yc4vb2/6.png",
+    "name": "Panvel Palace",
+    "address": "36, Mota Varachha Main Rd, Hans Society, Mota Varachha, Surat, Gujarat 394101, India",
+    "description": "Luxury Flat located in Surat",
+    "image": "https://ipfs.io/ipfs/QmUjc6gDzLiSFHKpM8crDXQRuJxNsZAvEdK6D1d9yc4vb2/1.png",
     "id": "1",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 5
+            "value": 20
         },
         {
             "trait_type": "Type of Residence",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "Bed Rooms",
-            "value": 7
+            "value": 4
         },
         {
             "trait_type": "Bathrooms",

@@ -1,4 +1,4 @@
-# Real Estate NFT DApp
+# Real Estate NFT DApp on Holesky testnet
 
 ## Technology Stack & Tools
 
@@ -12,6 +12,7 @@
 - Install [NodeJS](https://nodejs.org/en/)
 
 ## Setting Up
+
 ### 1. Clone/Download the Repository
 
 ### 2. Install Dependencies:
@@ -20,12 +21,14 @@
 ### 3. Run tests
 `$ npx hardhat test`
 
-### 4. Start Hardhat node
-`$ npx hardhat node`
+### 4.Change envirnmental variables
+`$ private key of provifders account `
+`$ you will require 4 accounts with sufficiant holesky test ethers in it `
+
 
 ### 5. Run deployment script
 In a separate terminal execute:
-`$ npx hardhat run ./scripts/deploy.js --network localhost`
+`$ npx hardhat run ./scripts/deploy.js --network holesky`
 
 ### 7. Start frontend
 `$ npm run start`

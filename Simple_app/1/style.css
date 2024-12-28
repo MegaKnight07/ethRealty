@@ -1,0 +1,113 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1E2A38;
+  }
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  .navbar .logo img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .nav-links li {
+    display: inline;
+    margin: 0 15px;
+  }
+  .nav-links a {
+    color: white;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover {
+    color: #FFD700;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f2f2f2;
+    animation: fadeIn 2s ease;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+    color: #1E2A38;
+  }
+  .hero p {
+    margin: 15px 0;
+  }
+  .hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #1E2A38;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  .hero button:hover {
+    background-color: #FFD700;
+    transform: scale(1.1);
+  }
+  
+  /* Listings Section */
+  .listings {
+    padding: 50px 20px;
+  }
+  .listings h2 {
+    text-align: center;
+    color: #1E2A38;
+  }
+  
+  /* Property Cards */
+  .property-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .property-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  .property-card h3 {
+    color: #333;
+    margin: 10px 0;
+  }
+  .property-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Placeholder for Image */
+  .image-placeholder {
+    background-color: #ddd;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+  }
+  

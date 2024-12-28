@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: #ffffff;
+  --clr-dark: #2d2d2d;
+  --clr-light-grey: #f5f5f5;
+  --clr-blue: #3498db;
+  --clr-orange: #e67e22;
+  --clr-accent: #f39c12;
+  --clr-muted: #7f8c8d;
+  --clr-dark-bg: #121212; /* Dark background color */
+  --clr-dark-text: #e0e0e0; /* Light text for dark mode */
+  --clr-dark-nav: #333; /* Dark nav background */
+  --clr-dark-card: #2c2c2c; /* Dark card background */
+  --clr-pink: #ff4b7d;
+  --clr-yellow: #ffeb3b; /* Yellow for sun icon */
+}
+
+/* ------------------------------------------------------ */
+/* -- Body and Global Styles -- */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--clr-light-grey);
+  color: var(--clr-dark);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: var(--clr-dark-bg);
+  color: var(--clr-dark-text);
+}
+
+/* ------------------------------------------------------ */
+/* -- NAVIGATION -- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, var(--clr-pink), var(--clr-blue)); /* Gradient */
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Glassdoor effect */
+  border-radius: 15px;
+  color: var(--clr-white);
+  transition: background-color 0.3s;
+}
+
+.dark-mode nav {
+  background-color: var(--clr-dark-nav);
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav__brand img {
+  width: 120px;
+  margin-right: 15px;
+}
+
+.nav__brand h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--clr-white);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  margin: 0 20px;
+}
+
+.nav__links li a {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav__links li a:hover {
+  color: var(--clr-accent);
+}
+
+.nav__connect {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav__connect:hover {
+  background-color: var(--clr-accent);
+}
+
+/* Dark Mode Navbar */
+.dark-mode .nav__connect {
+  background-color: var(--clr-dark-bg);
+  color: var(--clr-dark-text);
+}
+
+.dark-mode .nav__connect:hover {
+  background-color: var(--clr-accent);
+}
+
+/* ------------------------------------------------------ */
+/* -- Dark Mode Toggle Button */
+.nav__theme-toggle {
+  background: none;
+  border: 2px solid var(--clr-white);
+  color: var(--clr-white);
+  padding: 8px 16px;
+  font-size: 1.1em;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav__theme-toggle:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-dark-bg);
+}
+
+/* ------------------------------------------------------ */
+/* -- HEADER -- */
+header {
+  background: linear-gradient(135deg, var(--clr-pink), var(--clr-blue));
+  color: var(--clr-white);
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  transition: background 0.3s ease;
+  backdrop-filter: blur(10px); /* Glassdoor effect */
+  border-radius: 15px;
+}
+
+.dark-mode header {
+  background: linear-gradient(135deg, #2c2c2c, #333333);
+}
+
+/* ------------------------------------------------------ */
+/* -- CARDS -- */
+.cards__section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.cards__section h3 {
+  margin: 40px 0;
+  font-size: 2.5em;
+  text-align: center;
+  color: var(--clr-blue);
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: var(--clr-white);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card__image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card__info {
+  padding: 20px;
+}
+
+.card__info h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--clr-dark);
+}
+
+.card__info p {
+  font-size: 1.1em;
+  color: var(--clr-muted);
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------------ */
+/* -- HOMES -- */
+.home {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--clr-white);
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1000px;
+  height: 80%;
+  overflow-y: auto;
+}
+
+.home__details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.home__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.home__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__close img {
+  width: 20px;
+  height: 20px;
+}
+
+.home__overview {
+  padding: 15px 0;
+  overflow-y: auto;
+}
+
+.home__overview h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.home__overview p {
+  font-size: 1.2em;
+  color: var(--clr-muted);
+}
+
+.home__buy,
+.home__contact,
+.home__owned {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home__buy:hover {
+  background-color: var(--clr-accent);
+}
+
+.home__contact {
+  background-color: transparent;
+  color: var(--clr-blue);
+  border: 2px solid var(--clr-blue);
+}
+
+.home__contact:hover {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+}
+
+.home__owned {
+  background-color: var(--clr-green);
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------------------ */
+/* -- RESPONSIVE DESIGN -- */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  header {
+    min-height: 60vh;
+  }
+
+  .header__title {
+    font-size: 2em;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* Add these new styles for the toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    background-color: #ccc; /* Default background */
+    border-radius: 34px;
+    transition: background-color 0.4s;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0e0e0;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    content: "🌙"; /* Default moon icon */
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #3498db; /* Light blue for moon icon */
+}
+
+/* When checked, change the background and move the circle */
+input:checked + .slider {
+    background-color: #4CAF50; /* Green for active */
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px); /* Move the circle to the right */
+    content: "🌞"; /* Sun icon when checked */
+    color: #f39c12; /* Accent color for sun icon */
+}
+
+/* Hover effect for smooth transition */
+.switch:hover .slider {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+}
+
+ .hiddenMessage{
+  display: none;
+}
+
+.hiddenMessage.dark {
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+}
+
