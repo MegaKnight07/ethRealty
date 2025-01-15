@@ -32,3 +32,6 @@ In a separate terminal execute:
 
 ### 7. Start frontend
 `$ npm run start`
+
+### 8. User Interface
+<img src="./public/ui-demo.png">
